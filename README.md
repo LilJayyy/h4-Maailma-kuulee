@@ -19,7 +19,8 @@
 * DirectX-versio: DirectX 12
 
 
-# x) Artikkeli Lue ja tiivistä.
+# x) Artikkeli 
+Lue ja tiivistä.
 
 Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla (h4) (opiskelijan esimerkkiraportti), kohdat
 esimerkkiraportti), kohdat
