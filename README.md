@@ -37,14 +37,13 @@ https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-exa
 # e) Kotisivut palvelimelle
 
 # f) Palvelimen ohjelmien päivitys
-Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS
 
-# a) Vuokraa oma virtuaalipalvelin haluamaltasi palveluntarjoajalta. (Vaihtoehtona voit käyttää ilmaista kokeilujaksoa, GitHub Education krediittejä; tai jos mikään muu ei onnistu, voit kokeilla ilmaiseksi vagrant:ia paikallisesti. Suosittelen kuitenkin harjoittelemaan oikeilla, tuotantoon kelpaavilla julkisilla palveluilla).
+# g) Vapaaehtoinen: weppipalvelimen asennus virtuaalipalvelimelle
+- Asenna web-palvelin (esim. Apache tai Nginx) virtuaalipalvelimellesi  
+- Testaa, että testisivu näkyy julkisesti eri koneilta  
 
-# b) Tee alkutoimet omalla virtuaalipalvelimellasi: tulimuuri päälle, root-tunnus kiinni, ohjelmien päivitys.
-
-# c) Asenna weppipalvelin omalle virtuaalipalvelimellesi. Korvaa testisivu. Kokeile, että se näkyy julkisesti. Kokeile myös eri koneelta, esim kännykältä. (Jos haluat tehdä oikeat weppisivut, tarvitset Name Based Virtual Hostin)
-
-# d) Vapaaehtoinen: Laita omalle julkiselle palvelimellesi uusi Name Based Virtual Host. Kun sammutat muut weppisivut, niin se ainut näkyy nimestä riippumatta etusivulla. Name Based Virtual Host avulla pääset muokkaamaan kotisivuja normaalilla käyttäjällä, ilman sudoa.
+# h) Vapaaehtoinen: Laita omalle julkiselle palvelimellesi uusi Name Based Virtual Host
+- Kun sammutat muut weppisivut, niin se ainut näkyy nimestä riippumatta etusivulla  
+- Name Based Virtual Host avulla pääset muokkaamaan kotisivuja normaalilla käyttäjällä, ilman sudoa  
 
 ## Lähteet 
