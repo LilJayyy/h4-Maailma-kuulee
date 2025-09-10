@@ -6,6 +6,8 @@
 [d) Palvelin suojaan palomuurilla](#d-palvelin-suojaan-palomuurilla)
 [e) Kotisivut palvelimelle](#e-kotisivut-palvelimelle)
 [f) Palvelimen ohjelmien päivitys](#f-palvelimen-ohjelmien-päivitys)
+[g) Vapaaehtoinen: weppipalvelimen asennus virtuaalipalvelimelle](#g-vapaaehtoinen-weppipalvelimen-asennus-virtuaalipalvelimelle)
+[h) Vapaaehtoinen: Name Based Virtual Host](#h-vapaaehtoinen-laita-omalle-julkiselle-palvelimellesi-uusi-name-based-virtual-host)
 
 
 ### Koneen tekniset tiedot
@@ -17,8 +19,14 @@
 * DirectX-versio: DirectX 12
 
 
-# x) Artikkeli Lue ja tiivistä. Tiivistelmäksi riittää muutama ranskalainen viiva per artikkeli. (Tässä alakohdassa ei tarvitse tehdä testejä tietokoneella)
+# x) Artikkeli Lue ja tiivistä.
+
 Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla (h4) (opiskelijan esimerkkiraportti), kohdat
+esimerkkiraportti), kohdat
+a) Pilvipalvelimen vuokraus ja asennus
+d) Palvelin suojaan palomuurilla
+e) Kotisivut palvelimelle
+f) Palvelimen ohjelmien päivitys
 
 https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/
 
