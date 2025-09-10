@@ -2,11 +2,17 @@
 
 ## Sisältö
 [x) Artikkeli](#x-artikkeli)
+
 [a) Pilvipalvelimen vuokraus ja asennus](#a-pilvipalvelimen-vuokraus-ja-asennus)
+
 [d) Palvelin suojaan palomuurilla](#d-palvelin-suojaan-palomuurilla)
+
 [e) Kotisivut palvelimelle](#e-kotisivut-palvelimelle)
+
 [f) Palvelimen ohjelmien päivitys](#f-palvelimen-ohjelmien-päivitys)
+
 [g) Vapaaehtoinen: weppipalvelimen asennus virtuaalipalvelimelle](#g-vapaaehtoinen-weppipalvelimen-asennus-virtuaalipalvelimelle)
+
 [h) Vapaaehtoinen: Name Based Virtual Host](#h-vapaaehtoinen-laita-omalle-julkiselle-palvelimellesi-uusi-name-based-virtual-host)
 
 
