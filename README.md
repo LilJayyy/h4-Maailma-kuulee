@@ -219,9 +219,7 @@ Nyt on päivitetty palvelimen ohjelmat ja tietoturvapäivitykset.
 
 # h) Vapaaehtoinen: Laita omalle julkiselle palvelimellesi uusi Name Based Virtual Host
 
-Tässä kohtaa kello oli jo 19:30, koska käytin väärää avainta.
-
-Tämän seurauksena jouduin luomaan kokonaan uuden palvelimen uudella SSH-avaimella ja käyttäjällä lilja2.
+Tässä kohtaa kello oli jo 19:30, koska käytin väärää avainta. Tämän seurauksena jouduin luomaan kokonaan uuden palvelimen uudella SSH-avaimella ja käyttäjällä lilja2.
 
 Suosittelen olemaan **äärettömän tarkka julkisen `.pub` keyn kanssa ja yksityisen avaimen kanssa.**
 
@@ -267,6 +265,10 @@ Alla onnistunut lopputulos. Eli nyt minulla on julkinen DNS nimi Namecheapilta.
 ![20](images/20.png)
 
 _DNS Nimi vastaa_
+
+Tässä vaiheessa kello olikin jo 21.18. Tässä raportin teossa voisi todeta että kertaus on opintojen äiti. Pääsin ainakin harjoittelemaan muutamaan otteeseen, mutta millä muullakaan tavalla asioita oppii kuin kertaamalla.
+
+Serverin aion luoda vielä uudelleen kun siirryn DigitalOceanin puolelle. Onneksi NameCheapissa voi vain yhdistää uuden IP-osoitteen domainiin, joten siinä tulee pääsemään jokseenkin helpolla.
 
 ## Lähteet 
 
