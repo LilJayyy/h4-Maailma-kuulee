@@ -202,7 +202,7 @@ Alla työjärjestys, jolla etenin.
 
 * **`exit`**
 
-* **``**  - Kirjautuminen käyttäjällä
+* **`ssh lilja@185.26.51.22`**  - Kirjautuminen käyttäjällä
 
 * **`sudoedit /etc/ssh/sshd_config`**  - Tiedostoon muokkaamaan SSH-palveimen asetuksia
 
