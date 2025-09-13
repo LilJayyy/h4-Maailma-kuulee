@@ -27,7 +27,7 @@
 
 # x) Artikkeli 
 
-1. Susanna Lehdon (2022) artikkeli käsitteli seuraavia asioita.
+## Susanna Lehdon (2022) artikkeli käsitteli seuraavia asioita.
 
 ### a) Pilvipalvelimen vuokraus ja asennus
 - Asennettiin pilvipalvelin tilin luomisesta ja maksuvaiheesta alkaen
@@ -48,7 +48,7 @@
 **`sudo apt-get upgrade`**
 **`sudo apt-get dist-upgrade`**
 
-2. Tero Karvisen ( artikkelista _First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_ tiivistelmä alla. 
+## Tero Karvisen ( artikkelista _First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_ tiivistelmä alla. 
 
 Tässä päästään luomaan virtuaalipalvelin, palomuurin käyttöönotto, luodaan käyttäjä, suljetaan root, päivitetään paketit ja otetaan verkkopalvelin käyttöön. Ohjeistuksessa on käytetty DigitalOceania. Sivulla mainitaan myös kilpailijoista kuten Linode ja Gandi, mutta esimerkissä valitut on valittu siksi, että ne sisältyvät  GitHub Educationin pakettiin.
 
