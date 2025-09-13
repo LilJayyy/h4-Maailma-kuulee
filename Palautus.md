@@ -256,7 +256,7 @@ _Apachen oletussivu avautui_
 
 Syötin komennot
 
-* **`sudo apt update`** // Tietoturvapäivitykset ajantasalle
+* **`sudo apt update`** - Tietoturvapäivitykset ajantasalle
   
 * **`sudo apt-get upgrade`**
 
