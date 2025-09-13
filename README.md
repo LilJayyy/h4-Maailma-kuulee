@@ -38,8 +38,8 @@ Tässä päästään luomaan virtuaalipalvelin, palomuurin käyttöönotto, luod
 
 ### **Palomuuri** 
 - UFW:n (Uncomplicated Firewall) asennus
-- **`sudo ufw allow 22/tcp`** - Komennolla tehdään reikä SSH:lle ensin
-- **`sudo ufw allow 80/tcp`** - Komennolla Apachen serveriin
+-  **`sudo ufw allow 22/tcp`** - Komennolla tehdään reikä SSH:lle ensin
+-  **`sudo ufw allow 80/tcp`** - Komennolla Apachen serveriin
 
 ### **Lisätään käyttäjä ja tehdään pääkäyttäjäksi**
 - **`sudo adduser tero sudo`**
