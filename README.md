@@ -56,6 +56,7 @@ Palveluksi valikoitui:
 * 3.00€ /kuukaudessa
 
 ![up](images/up.png)
+
 _Konfiguraation tiedot_
 
 **Virhetilanne** tulikin, kun jostain syystä tuli herja "Permission denied". Vaikka kävin vaihtamassa SSH-keyn Accountin kautta Upcloudissa, herja toistui muutaan kerran.
