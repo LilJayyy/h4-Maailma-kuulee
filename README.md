@@ -26,16 +26,54 @@
 
 
 # x) Artikkeli 
-Lue ja tiivistä.
 
-Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla (h4) (opiskelijan esimerkkiraportti), kohdat
-esimerkkiraportti), kohdat
-a) Pilvipalvelimen vuokraus ja asennus
-d) Palvelin suojaan palomuurilla
-e) Kotisivut palvelimelle
-f) Palvelimen ohjelmien päivitys
+Tero Karvisen artikkelista_First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_ tiivistelmä alla. 
 
-https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/
+Tässä päästään luomaan virtuaalipalvelin, palomuurin käyttöönotto, luodaan käyttäjä, suljetaan root, päivitetään paketit ja otetaan verkkopalvelin käyttöön. Ohjeistuksessa on käytetty DigitalOceania. Sivulla mainitaan myös kilpailijoista kuten Linode ja Gandi, mutta esimerkissä valitut on valittu siksi, että ne sisältyvät  GitHub Educationin pakettiin.
+
+### **Luodaan virtuaalipalvelin Digital Oceanilla**
+- Luodaan käyttäjätili, syötetään maksukortin tiedot ja valitaan lähin data center (Eurooppa) asiakkaaksi.
+- Luodaan kirjautumistapa SSH-avain tai salasana
+- Kirjaudutaan sisään rootilla (ainut kerta kun sillä kirjaudutaan) 
+
+### **Palomuuri** 
+- UFW:n (Uncomplicated Firewall) asennus
+- **`sudo ufw allow 22/tcp`** - Komennolla tehdään reikä SSH:lle ensin
+- **`sudo ufw allow 80/tcp`** - Komennolla Apachen serveriin
+
+### **Lisätään käyttäjä ja tehdään pääkäyttäjäksi**
+- **`sudo adduser tero sudo`**
+- **`sudo adduser tero adm`**
+- **`ssh tero@tero.example.com`**
+  
+- Kokeile ensin: avaa uusi paikallinen terminaali ja testaa käyttäjäsi ennen kuin suljet istunnon
+
+### **Lukitaan root(juuri) -käyttäjä**
+- Lukitaan root käyttäjä. Huomiona se, että `usermod -lock` vain lukitsee salasanan eikä jokaista tapaa käyttää
+- **`sudo usermod --lock root`**
+- **`Disable root login on SSH`**
+
+-  **` sudoedit /etc/ssh/sshd_config`**
+   -  # ...
+-  - PermitRootLogin no
+   -  # ...
+- **`sudo service ssh restart`**
+
+### **Virtuaalipalvelimen ohjelmien päivitys turvallisuuden ylläpitämiseksi**
+- Tietoturvan takaamiseksi päivitetään uudet ohjelmat
+- **`sudo apt-get update`**
+- **`sudo apt-get upgrade`**
+
+### Ala käyttämään palvelinta 
+Kun asennat julkisen palvelimen (Apache esimerkiksi) muista avata reikä palomuuriin. 
+1. **`sudo ufw allow 80/tcp`**
+
+### Domain nimin yhdistäminen palvelimeen## 
+Viimeisessä kohdassa päästän myös tekemään Domain nimi eli julkinen DNS nimi NameCheapin kautta, joka vie suoraan luodulle verkkosivulle IP-osoitteen syöttämisen sijaan.  Ohjeistuksessa annettiin GitHub Educationin pakettiin liittyen vinkki, jolla saa NameCheapilta ilmaisen me-nimipalvelimen. 
+- Samalla on mainittu Gandista, joka on toinen hyvä vaihtoehto nimipalvelimen vuokraamiseen. 
+- Ohjeistetaan lisäämään uusi tiedosto ("A record" "@"). Testausta kehotettu vain Firefoxilla, ettei väärä nimi ole välimuistissa ja joutuisi turhaan odottamaan.
+- Nimen testaamista susitellaan tekemään host example.com dns1.registrar-servers.com -komennolla. 
+
 
 # a) Pilvipalvelimen vuokraus ja asennus
 
@@ -257,7 +295,7 @@ _Onnistunut osoitteen lisääminen_
 
 Pienen odottelun jälkeen päätin lähteä kokeilemaan incognito -ikkunalla tarkistusta, Karvisen (2017) ohjeissa olikin maininta että Mozillalla kannattaa kokeilla.
 
-Alla onnistunut lopputulos. Eli nyt minulla on julkinen DNS nimi Namecheapilta. 
+Alla onnistunut lopputulos. Eli **nyt minulla oli domainnimi Namecheapilta, joka yhdistyi luotuun palvelimeen**
 
 * **`94.237.117.136`** - Vie nyt suoraan luomalleni weppisivustolle
 
@@ -274,20 +312,21 @@ _Nimen testausta ja oikea IP-osoite vastaa_
 
 Tässä vaiheessa kello olikin jo 21.18. Tässä raportin teossa voisi todeta että kertaus on opintojen äiti. Pääsin ainakin harjoittelemaan muutamaan otteeseen, mutta millä muullakaan tavalla asioita oppii kuin kertaamalla.
 
-Serverin aion luoda vielä uudelleen kun siirryn DigitalOceanin puolelle. Onneksi NameCheapissa voi vain yhdistää uuden IP-osoitteen domainiin, joten siinä tulee pääsemään jokseenkin helpolla.
+Serverin aion luoda vielä uudelleen kun siirryn DigitalOceanin puolelle. Onneksi NameCheapissa voi vain yhdistää uuden IP-osoitteen domainnimeen, joten siinä tulee pääsemään jokseenkin helpolla.
 
 ## Lähteet 
 
+Karvinen, T. 2025. Verkkosivu. _Linux Palvelimet 2025_ Luettavissa: https://terokarvinen.com/linux-palvelimet/ Luettu 13.09.2025
+
+Karvinen, T. 2017. Verkkosivu. _First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_ https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/ Luettu 13.09.2025
+
 NameCheap. 2017. Artikkeli. _How to set up a URL redirect for a domain_ Luettavissa: https://www.namecheap.com/support/knowledgebase/article.aspx/385/2237/how-to-set-up-a-url-redirect-for-a-domain/ Luettu 13.09.2025.
+
+SelfPrivacy. 2025. Artikkeli _How to get root access via SSH_ Luettavissa: https://selfprivacy.org/docs/how-to-guides/root_ssh/ Luettu 13.09.2025
 
 Upcloud. Artikkeli. _Managing SSH keys_ Luettavissa: https://upcloud.com/docs/guides/managing-ssh-keys/ Luettu: 13.9.2025.
 
 Upcloud. Artikkeli. _Connecting to your Cloud Server_ Luettavssa: https://upcloud.com/docs/guides/connecting-to-your-server/ Luettu 13.09.2025
 
-SelfPrivacy. 2025. Artikkeli _How to get root access via SSH_ Luettavissa: https://selfprivacy.org/docs/how-to-guides/root_ssh/ Luettu 13.09.2025
-
-Karvinen, T. 2025. Verkkosivu. _Linux Palvelimet 2025_ Luettavissa: https://terokarvinen.com/linux-palvelimet/ Luettu 13.09.2025
-
-Karvinen, T. 2017. Verkkosivu. _First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_ https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/ Luettu 13.09.2025
 
  
