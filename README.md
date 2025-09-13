@@ -241,6 +241,7 @@ _Domain list_
 Tarkistin sivun ja lähti toimimaan uudella IP-osoitteella hienosti.
 
  ![16](images/16.png)
+ 
   _DNS Checkeriin oli vaihtunut IP-osoite onnistuneesti_
 
 
