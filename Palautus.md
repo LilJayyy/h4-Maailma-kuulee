@@ -267,9 +267,7 @@ Nyt on päivitetty palvelimen ohjelmat ja tietoturvapäivitykset.
 
 Tässä kohtaa kello oli jo 19:30, koska käytin väärää avainta. Tämän seurauksena jouduin luomaan kokonaan uuden palvelimen uudella SSH-avaimella ja käyttäjällä lilja2.
 
-Suosittelen olemaan tarkka julkisen `.pub` keyn kanssa ja yksityisen avaimen kanssa.
-
-Myös tässä oli tärkeä hahmottaa rootia lukittaessa, että ei kirjoita tuplaten `PermitRootLogin no`.
+Suosittelen olemaan tarkka julkisen `.pub` keyn kanssa ja yksityisen avaimen kanssa. Oli tärkeä myös hahmottaa rootia lukittaessa, että ei kirjoita tuplaten `PermitRootLogin no`.
 
 Kannattaa siis tarkasti etsiä listalta löytyykö jo kyseinen kohta ja vaihtaa vain `yes` tilalle `no`.
 
