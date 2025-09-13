@@ -245,13 +245,10 @@ Tässä hyödynsin myös h3 tehtävää, sekä Karvisen (2018) ohjetta, josta p�
 
 _Apachen oletussivu avautui_
 
-Tähän en luettele työjärjestystä web-sivuston luomisesta, sillä tein sen jo aiemmassa tehtävänannossa (h3).
+* Meinasi tulla virhetilanne, kun jouduin hieman miettimää millä koneella avaan kyseisen IP-osoitteen. Asiahan oli selvä, kun tuli ymmärrettyä että fyysiselle koneelle se syötetään internet-selaimelle, kun palvelin on sieltä avattu.
 
-Minulla meinasi tulla virhetilanne, kun jouduin hieman miettimää millä koneella avaan kyseisen IP-osoitteen. Asiahan oli selvä, kun tuli ymmärrettyä että fyysiselle koneelle se syötetään internet-selaimelle, kun palvelin on sieltä avattu.
-
-Toinen virhetilanne joka kesti onneksi vain 3 minuuttia, kun Google Chrome avasi koko ajan vain Apachen oletussivun muistista.
-
-Tajusin onnneksi avata Incognito -ikkunalla IP-osoitteen ja hienosti näkyi juuri luomani kotisivu vuokrattuun pilvipalvelimeen.
+* Toinen virhetilanne joka kesti onneksi vain 3 minuuttia, kun Google Chrome avasi koko ajan vain Apachen oletussivun muistista.
+  - Tajusin onnneksi avata Incognito -ikkunalla IP-osoitteen ja hienosti näkyi juuri luomani kotisivu vuokrattuun pilvipalvelimeen.
 
  ![8](images/8.png)
 
