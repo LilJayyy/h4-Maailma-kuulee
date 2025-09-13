@@ -94,30 +94,7 @@ _Palomuurin asennus_
 
 * ![1](images/1.png)
 
-_Palomuurin käyttöönotto ja SSH:n salliminen_
-
-# Lisätään käyttäjä
-
-* **`sudo adduser lilja`** 
-
-* **`asetin salasanan`** 
-
-* **`sudo adduser lilja sudo`**
-
-* **`sudo adduser lilja adm`**
-
-# SSH-avaimen luonti ja sen liittäminen palveluntarjoajan (UpCloud) weppiliittymään
-
-Tässä pystyi itse valita käyttikö microa vai nanoa. Päätin kokeilla harjoituksen vuoksi molempia.
-
-* **`sudo apt get`**
-* **`sudo apt install micro`**
-* **` micro /home/lilja/.ssh/authorized_keys`** - Komennolla avasin tiedoston authorized_keys ja lisäsin avaimen sinne
-* **`ssh -i ~/.ssh/id_ed25519 lilja@185.26.51.22`** - Komennolla testasin onnistumisen. 
-
-  ![3](images/3.png)
-  
-_Kirjautuminen onnistui_
+_Palomuurin käyttöönotto_
 
 # e) Kotisivut palvelimelle
 
@@ -132,6 +109,30 @@ Haluan tehdä myös DigitalOceaniin pilvipalvelimen ja siirtää sen mahdollises
   ![2](images/2.png)
 
   _Onnistunut linkitys ja etu_
+
+
+### Lisätään käyttäjä ja SSH
+
+* **`sudo adduser lilja`** 
+
+* **`asetin salasanan`** 
+
+* **`sudo adduser lilja sudo`**
+
+* **`sudo adduser lilja adm`**
+
+### SSH-avaimen luonti ja sen liittäminen palveluntarjoajan (UpCloud) weppiliittymään
+
+Tässä pystyi itse valita käyttikö microa vai nanoa. Päätin kokeilla harjoituksen vuoksi molempia.
+
+* **`sudo apt get`**
+* **`sudo apt install micro`**
+* **` micro /home/lilja/.ssh/authorized_keys`** - Komennolla avasin tiedoston authorized_keys ja lisäsin avaimen sinne
+* **`ssh -i ~/.ssh/id_ed25519 lilja@185.26.51.22`** - Komennolla testasin onnistumisen. 
+
+  ![3](images/3.png)
+  
+_Kirjautuminen onnistui_
 
 
  **Siirryin seuraavaksi kotisivujen lisäämiseen palvelimelle Karvisen (2017) ohjeilla.**
@@ -152,7 +153,7 @@ Alla työjärjestys, jolla etenin.
 
 * **`exit`**
 
-* **`ssh lilja@185.26.51.22`**  - Kirjautuminen käyttäjällä
+* **``**  - Kirjautuminen käyttäjällä
 
 * **`sudoedit /etc/ssh/sshd_config`**  - Tiedostoon muokkaamaan SSH-palveimen asetuksia
 
@@ -170,6 +171,9 @@ Alla työjärjestys, jolla etenin.
 
 _Yllä oleva prosessi kuvassa_
 
+
+# g) Vapaaehtoinen: weppipalvelimen asennus virtuaalipalvelimelle
+
 Tässä kohdin oli hyvä ymmärtää mitä tunnilla havaitsin seuratessa. En ollut koskaan aiemmin tehnyt tätä, mutta ajatuksena helpotti miettiä, että alustan ja asennan kaiken niin sanotusti uudelleen tälle juuri luomalleni pilvipalvelimelle. 
 
 Tässä hyödynsin myös h3 tehtävää, josta pääsin katsomaan etenemisaskeleita. Ikävä kyllä ihan ulkomuistista komennot eivät vielä tulleet.
@@ -177,7 +181,7 @@ Tässä hyödynsin myös h3 tehtävää, josta pääsin katsomaan etenemisaskele
 Lähdin asentamaan Apachea
 
 * **`sudo apt update`**
-
+  
 * **`sudo apt install apache2`**
 
 
@@ -204,15 +208,69 @@ Tajusin onnneksi avata Incognito -ikkunalla IP-osoitteen ja hienosti näkyi juur
 
 # f) Palvelimen ohjelmien päivitys
 
-# g) Vapaaehtoinen: weppipalvelimen asennus virtuaalipalvelimelle
-- Asenna web-palvelin (esim. Apache tai Nginx) virtuaalipalvelimellesi  
-- Testaa, että testisivu näkyy julkisesti eri koneilta  
+Syötin komennot
+
+* **`sudo apt update`** // Tietoturvapäivitykset ajantasalle
+  
+* **`sudo apt-get upgrade`**
+
+Nyt on päivitetty palvelimen ohjelmat ja tietoturvapäivitykset.
+
 
 # h) Vapaaehtoinen: Laita omalle julkiselle palvelimellesi uusi Name Based Virtual Host
-- Kun sammutat muut weppisivut, niin se ainut näkyy nimestä riippumatta etusivulla  
-- Name Based Virtual Host avulla pääset muokkaamaan kotisivuja normaalilla käyttäjällä, ilman sudoa  
+
+Tässä kohtaa kello oli jo 19:30, koska käytin väärää avainta.
+
+Tämän seurauksena jouduin luomaan kokonaan uuden palvelimen uudella SSH-avaimella ja käyttäjällä lilja2.
+
+Suosittelen olemaan **äärettömän tarkka julkisen `.pub` keyn kanssa ja yksityisen avaimen kanssa.**
+
+Myös tässä oli tärkeä hahmottaa rootia lukittaessa, että **et kirjoita tuplaten** `PermitRootLogin no`.
+
+Kannattaa siis tarkasti etsiä listalta löytyykö jo kyseinen kohta ja vaihtaa vain `yes` tilalle `no`.
+
+
+  ![19](images/19.png)
+
+  _Lähti toimimaan hienosti internet-selaimessa uudella IP-osoitteella_
+
+* Etenin NameCheapin sivuille. GitHub Educationilla sai vuoden ilmatteeksi eli varasin sieltä domainin liljasharifi.me joka oli vapaana.
+
+ ![9](images/9.png)
+
+_Domain list_
+
+Tarkistin sivun ja lähti toimimaan uudella IP-osoitteella hienosti.
+
+ ![16](images/16.png)
+  _DNS Checkeriin oli vaihtunut IP-osoite onnistuneesti_
+
+
+**Osoitteen lisääminen NameCheapissa**
+
+* **`Advanced DNS`** - listaan kävin klikkaamassa "Add a new record" -painikkeesta
+* **`@`** Host
+* **`94.237.117.136`** IP -address kohtaan ja sitten alkoi odottelu. Tässä TTL (Time To Live) aika oli 5-30 minuuttia.
+
+![17](images/17.png)
+
+_Onnistunut osoitteen lisääminen_
+
+Pienen odottelun jälkeen päätin lähteä kokeilemaan incognito -ikkunalla tarkistusta, Karvisen (2017) ohjeissa olikin maininta että Mozillalla kannattaa kokeilla.
+
+Alla onnistunut lopputulos. Eli nyt minulla on julkinen DNS nimi Namecheapilta. 
+
+* **`94.237.117.136`** - Vie nyt suoraan luomalleni weppisivustolle
+
+* **`http://liljasharifi.me/`** - Domain nimellä vie nyt myös suoraan weppisivustolle
+
+![20](images/20.png)
+
+_DNS Nimi vastaa_
 
 ## Lähteet 
+
+NameCheap. 2017. Artikkeli. _How to set up a URL redirect for a domain_ Luettavissa: https://www.namecheap.com/support/knowledgebase/article.aspx/385/2237/how-to-set-up-a-url-redirect-for-a-domain/ Luettu 13.09.2025.
 
 Upcloud. Artikkeli. _Managing SSH keys_ Luettavissa: https://upcloud.com/docs/guides/managing-ssh-keys/ Luettu: 13.9.2025.
 
