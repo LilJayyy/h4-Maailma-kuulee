@@ -266,6 +266,11 @@ Alla onnistunut lopputulos. Eli nyt minulla on julkinen DNS nimi Namecheapilta.
 
 _DNS Nimi vastaa_
 
+![21](images/21.png)
+
+_Nimen testausta ja oikea IP-osoite vastaa_
+
+
 Tässä vaiheessa kello olikin jo 21.18. Tässä raportin teossa voisi todeta että kertaus on opintojen äiti. Pääsin ainakin harjoittelemaan muutamaan otteeseen, mutta millä muullakaan tavalla asioita oppii kuin kertaamalla.
 
 Serverin aion luoda vielä uudelleen kun siirryn DigitalOceanin puolelle. Onneksi NameCheapissa voi vain yhdistää uuden IP-osoitteen domainiin, joten siinä tulee pääsemään jokseenkin helpolla.
