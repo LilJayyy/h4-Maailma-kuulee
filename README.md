@@ -79,8 +79,6 @@ Olen nyt saanut vuokrattua pilvipalvelimen ja yhdistettyä Linux-virtuaalikonees
 
 Tässä tehtävänosiossa lähdin etenemään 14:23. Käytin tässä Karvisen (2017) ohjeistusta palomuurin käyttöönotosta aloittaen.
 
-Tunnilla näytettiin tämän osion eteneminen. Ymmärsin siitä, että hommat pitää asentaa niin sanotusti "alusta alkaen" joten aloitin seuraavasti:
-
 *  **`apt update`**  - Pakettien päivitystä
 *  **`apt install ufw`** - Komennolla UFW:n (Uncomplicated Firewall) asennus
 
@@ -127,13 +125,13 @@ Sain tässä kohtaa viestin Github Educationilta, että hakemus hyväksytiin.
 
 Kävin DigitalOceanin sivuilla rekisteröitymässä GitHub tunnuksillani - jossa se tunnisti GitHub Education paketin ja sain lahjaksi 200 dollaria krediittejä. 
 
-Haluan tehdä myös DigitalOceaniin pilvipalvelimen ja siirtää sen mahdollisesti kokonaan. UpCloudista sain vain 10 euroa ilmaisia krediittejä, joka hupenee jo kovaa vauhtia
+Haluan tehdä myös DigitalOceaniin pilvipalvelimen ja siirtää sen mahdollisesti kokonaan. UpCloudista sain vain 10 euroa ilmaisia krediittejä, joka hupenee jo kovaa vauhtia.
 
   ![2](images/2.png)
 
   _Onnistunut linkitys ja etu_
   
-Siirryin seuraavaksi kotisivujen lisäämiseen palvelimelle Karvisen (2017) hjeilla.
+Siirryin seuraavaksi kotisivujen lisäämiseen palvelimelle Karvisen (2017) ohjeilla.
 
 Tässä kohtaa olin luonut julkisen ja yksityisen SSH-avaimen. Lisäsin käyttäjätunnuksen `lilja` ja lopuksi SSH-palvelimen asetusten muutos `sudoedit /etc/ssh/sshd_config` - komennolla eli disabloitiin/poistettiin käytöstä root-kirjautuminen SSH:n kautta.
 
