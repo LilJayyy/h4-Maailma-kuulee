@@ -48,7 +48,7 @@
 **`sudo apt-get upgrade`**
 **`sudo apt-get dist-upgrade`**
 
-## Tero Karvisen ( artikkelista _First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_ tiivistelmä alla. 
+## Tero Karvisen artikkeli _First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_
 Lähdettiin luomaan virtuaalipalvelin, palomuurin käyttöönotto, luodaan käyttäjä, suljetaan root, päivitetään paketit ja otetaan verkkopalvelin käyttöön. Ohjeistuksessa on käytetty DigitalOceania. Sivulla mainitaan myös kilpailijoista kuten Linode ja Gandi, mutta esimerkissä valitut on valittu siksi, että ne sisältyvät  GitHub Educationin pakettiin.
 
 ### **Luodaan virtuaalipalvelin Digital Oceanilla**
