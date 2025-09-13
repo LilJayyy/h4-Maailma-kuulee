@@ -312,13 +312,11 @@ _Nimen testausta ja oikea IP-osoite vastaa_
 
 #### Lopputulos 
 
-Tässä vaiheessa kello olikin jo 21.18. Tässä raportin teossa voisi todeta, että kertaus on opintojen äiti. 
+Tässä vaiheessa kello olikin jo 21.18. Raportin loppua kirjoittaessa voi todeta, että kertaus on opintojen äiti.
 
-Pääsin ainakin harjoittelemaan muutamaan otteeseen, mutta millä muullakaan tavalla asioita oppii kuin kertaamalla.
+Pääsin harjoittelemaan muutamaan otteeseen, ja millä muulla tavalla asioita oppisi kuin kertaamalla.
 
-Serverin aion luoda vielä uudelleen kun siirryn DigitalOceanin puolelle. Onneksi 
-
-NameCheapissa voi vain yhdistää uuden IP-osoitteen domainnimeen, joten siinä tulee pääsemään jokseenkin helpolla.
+Serverin aion luoda vielä uudelleen, kun siirryn DigitalOceanin puolelle. Onneksi NameCheapissa voi vain yhdistää uuden IP-osoitteen domain-nimeen, joten se onnistuu suhteellisen helposti.
 
 ## Lähteet 
 Archlinux. Verkkosivu. _systemd/Journal_ Luettavissa: https://wiki.archlinux.org/title/Systemd/Journal Luettu 13.09.2025.
