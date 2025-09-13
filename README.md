@@ -214,7 +214,7 @@ _Yllä oleva prosessi kuvassa_
 
 Tässä kohdin oli hyvä ymmärtää mitä tunnilla havaitsin seuratessa. En ollut koskaan aiemmin tehnyt tätä, mutta ajatuksena helpotti miettiä, että alustan ja asennan kaiken niin sanotusti uudelleen tälle juuri luomalleni pilvipalvelimelle. 
 
-Tässä hyödynsin myös h3 tehtävää, josta pääsin katsomaan etenemisaskeleita. Ikävä kyllä ihan ulkomuistista komennot eivät vielä tulleet.
+Tässä hyödynsin myös h3 tehtävää, sekä Karvisen (2018) ohjetta, josta pääsin katsomaan etenemisaskeleita. Ikävä kyllä ihan ulkomuistista komennot eivät vielä tulleet.
 
 Lähdin asentamaan Apachea
 
@@ -315,18 +315,27 @@ Tässä vaiheessa kello olikin jo 21.18. Tässä raportin teossa voisi todeta et
 Serverin aion luoda vielä uudelleen kun siirryn DigitalOceanin puolelle. Onneksi NameCheapissa voi vain yhdistää uuden IP-osoitteen domainnimeen, joten siinä tulee pääsemään jokseenkin helpolla.
 
 ## Lähteet 
+Archlinux. Verkkosivu. _systemd/Journal_ Luettavissa: https://wiki.archlinux.org/title/Systemd/Journal Luettu 13.09.2025.
 
-Karvinen, T. 2025. Verkkosivu. _Linux Palvelimet 2025_ Luettavissa: https://terokarvinen.com/linux-palvelimet/ Luettu 13.09.2025
+GitHub Education. Verkkosivu. Luettavissa: https://education.github.com/learner/learn Luettu 13.09.2025.
 
-Karvinen, T. 2017. Verkkosivu. _First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_ https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/ Luettu 13.09.2025
+Karvinen, T. 2025. Verkkosivu. _Linux Palvelimet 2025_ Luettavissa: https://terokarvinen.com/linux-palvelimet/ Luettu 13.09.2025.
+
+Karvinen, T. 2017. Verkkosivu. _First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_ Luettavissa: https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/ Luettu 13.09.2025.
+
+Karvinen, T. 2018. Verkkosivu. _Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address_ Luettavissa: https://terokarvinen.com/2018/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/ Luettu: 13.09.2025.
 
 NameCheap. 2017. Artikkeli. _How to set up a URL redirect for a domain_ Luettavissa: https://www.namecheap.com/support/knowledgebase/article.aspx/385/2237/how-to-set-up-a-url-redirect-for-a-domain/ Luettu 13.09.2025.
 
-SelfPrivacy. 2025. Artikkeli _How to get root access via SSH_ Luettavissa: https://selfprivacy.org/docs/how-to-guides/root_ssh/ Luettu 13.09.2025
+Namecheap. Verkkosivu. Luettavissa: https://www.namecheap.com/ Luettu: 13.09.2025.
+
+SelfPrivacy. 2025. Artikkeli _How to get root access via SSH_ Luettavissa: https://selfprivacy.org/docs/how-to-guides/root_ssh/ Luettu 13.09.2025.
 
 Upcloud. Artikkeli. _Managing SSH keys_ Luettavissa: https://upcloud.com/docs/guides/managing-ssh-keys/ Luettu: 13.9.2025.
 
-Upcloud. Artikkeli. _Connecting to your Cloud Server_ Luettavssa: https://upcloud.com/docs/guides/connecting-to-your-server/ Luettu 13.09.2025
+Upcloud. Artikkeli. _Connecting to your Cloud Server_ Luettavssa: https://upcloud.com/docs/guides/connecting-to-your-server/ Luettu 13.09.2025.
 
+W3Schools. HTML Tutorial. Luettavissa: https://www.w3schools.com/html/default.asp. Luettu 13.09.2025.
 
+Vahtera, P. 2018. Verkkosivu. _HTML5 ja Web-sivun rakenne_ Luettavissa: https://punomo.fi/html5-ja-web-sivun-rakenne/ Luettu 13.09.2025.
  
