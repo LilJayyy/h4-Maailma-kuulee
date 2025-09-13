@@ -114,7 +114,8 @@ Tässä pystyi itse valita käyttikö microa vai nanoa. Päätin kokeilla harjoi
 * **` micro /home/lilja/.ssh/authorized_keys`** - Komennolla avasin tiedoston authorized_keys ja lisäsin avaimen sinne
 * **`ssh -i ~/.ssh/id_ed25519 lilja@185.26.51.22`** - Komennolla testasin onnistumisen. 
 
-  ![1](images/1.png)
+  ![3](images/3.png)
+  
 _Kirjautuminen onnistui_
 
 # e) Kotisivut palvelimelle
