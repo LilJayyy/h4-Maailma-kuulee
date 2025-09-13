@@ -27,7 +27,28 @@
 
 # x) Artikkeli 
 
-Tero Karvisen artikkelista _First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_ tiivistelmä alla. 
+1. Susanna Lehdon (2022) artikkeli käsitteli seuraavia asioita.
+
+### a) Pilvipalvelimen vuokraus ja asennus
+- Asennettiin pilvipalvelin tilin luomisesta ja maksuvaiheesta alkaen
+- Prosessin eri vaiheita käytiin läpi käyttäen DigitalOceanin palvelinta.
+
+### d) Palomuurilla palvelimen suojaaminen
+- Palomuuria asennettiin komennolla `sudo apt-get install ufw`
+- Siihen tehtiin reikä porttia varten ja laitettiin se päälle
+
+### e) Palvelimeen asennettiin kotisivut
+- Terminaalissa tehtiin virtuaalipalvelin ja käyttäjätunnus tiedot
+- Uuden käyttäjän tunnuksia testattiin avaamalla SSH- yhteys virtuaalipalvelimeen ja päivitettiin tiedot päivityksistä
+
+### f) Ohjelmien päivitys palvelimeen
+- Toinen termnaali avattiin ja SSH-yhteys virtuaalipalvelimen pääkäyttäjän tunnuksilla.
+- Lopuksi asennettii päivitykset ja tietoturvapäivitykset komennoilla
+**`sudo apt-get update`**
+**`sudo apt-get upgrade`**
+**`sudo apt-get dist-upgrade`**
+
+2. Tero Karvisen ( artikkelista _First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_ tiivistelmä alla. 
 
 Tässä päästään luomaan virtuaalipalvelin, palomuurin käyttöönotto, luodaan käyttäjä, suljetaan root, päivitetään paketit ja otetaan verkkopalvelin käyttöön. Ohjeistuksessa on käytetty DigitalOceania. Sivulla mainitaan myös kilpailijoista kuten Linode ja Gandi, mutta esimerkissä valitut on valittu siksi, että ne sisältyvät  GitHub Educationin pakettiin.
 
