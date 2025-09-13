@@ -132,8 +132,9 @@ Haluan tehdä myös DigitalOceaniin pilvipalvelimen ja siirtää sen mahdollises
   ![2](images/2.png)
 
   _Onnistunut linkitys ja etu_
-  
-Siirryin seuraavaksi kotisivujen lisäämiseen palvelimelle Karvisen (2017) ohjeilla.
+
+
+ **Siirryin seuraavaksi kotisivujen lisäämiseen palvelimelle Karvisen (2017) ohjeilla.**
 
 Tässä kohtaa olin luonut julkisen ja yksityisen SSH-avaimen. Lisäsin käyttäjätunnuksen `lilja` ja lopuksi SSH-palvelimen asetusten muutos `sudoedit /etc/ssh/sshd_config` - komennolla eli disabloitiin/poistettiin käytöstä root-kirjautuminen SSH:n kautta.
 
