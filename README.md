@@ -100,7 +100,7 @@ _Palomuurin käyttöönotto ja SSH:n salliminen_
 
 * **`sudo adduser lilja`** 
 
-* **asetin salasanan** 
+* **`asetin salasanan`** 
 
 * **`sudo adduser lilja sudo`**
 
