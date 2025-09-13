@@ -301,7 +301,7 @@ _Onnistunut osoitteen lisääminen_
 
 Pienen odottelun jälkeen päätin lähteä kokeilemaan incognito -ikkunalla tarkistusta, Karvisen (2017) ohjeissa olikin maininta että Mozillalla kannattaa kokeilla.
 
-Alla onnistunut lopputulos. Eli **nyt minulla oli domainnimi Namecheapilta, joka yhdistyi luotuun palvelimeen**
+Alla onnistunut lopputulos. Nyt minulla oli NameCheapilta hankittu domain, joka yhdistettiin luotuun palvelimeen.
 
 * **`94.237.117.136`** - Vie nyt suoraan luomalleni weppisivustolle
 
