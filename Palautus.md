@@ -149,9 +149,7 @@ _Palomuurin käyttöönotto_
 
 # e) Kotisivut palvelimelle
 
-Lähdin tähän tehtävänosioon 16:12 tauon jälkeen. 
-
-Sain tässä kohtaa viestin Github Educationilta, että hakemus hyväksytiin.
+Lähdin tähän tehtävänosioon 16:12 tauon jälkeen. Sain tässä kohtaa viestin Github Educationilta, että hakemus hyväksytiin.
 
 Kävin DigitalOceanin sivuilla rekisteröitymässä GitHub tunnuksillani - jossa se tunnisti GitHub Education paketin ja sain lahjaksi 200 dollaria krediittejä. 
 
