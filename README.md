@@ -83,7 +83,7 @@ Raportin ja tehtävän tekeminen jatkui 13.09.2025 kello 13:30. Tehtäväosiossa
 
 Palveluksi valikoitui:
 
-**Upcloud**
+### **Upcloud**
 
 * 1 CPU-ydin (CPU)
   
@@ -97,7 +97,7 @@ Palveluksi valikoitui:
 
 _Konfiguraation tiedot_
 
-**Virhetilanne** tulikin, kun jostain syystä tuli herja "Permission denied". Vaikka kävin vaihtamassa SSH-keyn Accountin kautta Upcloudissa, herja toistui muutaan kerran.
+### **Virhetilanne** tulikin, kun jostain syystä tuli herja "Permission denied". Vaikka kävin vaihtamassa SSH-keyn Accountin kautta Upcloudissa, herja toistui muutaan kerran.
 
 Aikaa kului tässä kohtaa sen verran, että päädyin vuokraamaan kokonaan uuden pilvipalvelimen. Tunnilta muistui kuitenkin hyvin miten se luotiin. Kävin vaihtamassa kuitenkin SSH-keyn etukäteen.
 
@@ -173,7 +173,7 @@ Tässä pystyi itse valita käyttikö microa vai nanoa. Päätin kokeilla harjoi
 _Kirjautuminen onnistui_
 
 
- **Siirryin seuraavaksi kotisivujen lisäämiseen palvelimelle Karvisen (2017) ohjeilla.**
+#### **Siirryin seuraavaksi kotisivujen lisäämiseen palvelimelle Karvisen (2017) ohjeilla.**
 
 Tässä kohtaa olin luonut julkisen ja yksityisen SSH-avaimen. Lisäsin käyttäjätunnuksen `lilja` ja lopuksi SSH-palvelimen asetusten muutos `sudoedit /etc/ssh/sshd_config` - komennolla eli disabloitiin/poistettiin käytöstä root-kirjautuminen SSH:n kautta.
 
@@ -216,7 +216,7 @@ Tässä kohdin oli hyvä ymmärtää mitä tunnilla havaitsin seuratessa. En oll
 
 Tässä hyödynsin myös h3 tehtävää, sekä Karvisen (2018) ohjetta, josta pääsin katsomaan etenemisaskeleita. Ikävä kyllä ihan ulkomuistista komennot eivät vielä tulleet.
 
-Lähdin asentamaan Apachea
+### Apachen asentamista
 
 * **`sudo apt update`**
   
@@ -283,7 +283,7 @@ Tarkistin sivun ja lähti toimimaan uudella IP-osoitteella hienosti.
   _DNS Checkeriin oli vaihtunut IP-osoite onnistuneesti_
 
 
-**Osoitteen lisääminen NameCheapissa**
+### **Osoitteen lisääminen NameCheapissa**
 
 * **`Advanced DNS`** - listaan kävin klikkaamassa "Add a new record" -painikkeesta
 * **`@`** Host
