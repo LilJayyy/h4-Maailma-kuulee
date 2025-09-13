@@ -85,7 +85,7 @@ Kun asennat julkisen palvelimen (Apache esimerkiksi) muista avata reikä palomuu
 Viimeisessä kohdassa päästän myös tekemään Domain nimi eli julkinen DNS nimi NameCheapin kautta, joka vie suoraan luodulle verkkosivulle IP-osoitteen syöttämisen sijaan.  
 - Samalla on mainittu Gandista, joka on toinen hyvä vaihtoehto nimipalvelimen vuokraamiseen. 
 - Ohjeistetaan lisäämään uusi tiedosto ("A record" "@"). Testausta kehotettu vain Firefoxilla, ettei väärä nimi ole välimuistissa ja joutuisi turhaan odottamaan.
-- Nimen testaamista susitellaan tekemään host example.com dns1.registrar-servers.com -komennolla. 
+- Nimen testaamista susitellaan tekemään `host example.com dns1.registrar-servers.com` -komennolla.
 
 
 # a) Pilvipalvelimen vuokraus ja asennus
