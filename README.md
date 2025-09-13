@@ -68,7 +68,7 @@ Tässä päästään luomaan virtuaalipalvelin, palomuurin käyttöönotto, luod
 Kun asennat julkisen palvelimen (Apache esimerkiksi) muista avata reikä palomuuriin. 
 1. **`sudo ufw allow 80/tcp`**
 
-### Domain nimin yhdistäminen palvelimeen## 
+### Domain nimin yhdistäminen palvelimeen
 Viimeisessä kohdassa päästän myös tekemään Domain nimi eli julkinen DNS nimi NameCheapin kautta, joka vie suoraan luodulle verkkosivulle IP-osoitteen syöttämisen sijaan.  Ohjeistuksessa annettiin GitHub Educationin pakettiin liittyen vinkki, jolla saa NameCheapilta ilmaisen me-nimipalvelimen. 
 - Samalla on mainittu Gandista, joka on toinen hyvä vaihtoehto nimipalvelimen vuokraamiseen. 
 - Ohjeistetaan lisäämään uusi tiedosto ("A record" "@"). Testausta kehotettu vain Firefoxilla, ettei väärä nimi ole välimuistissa ja joutuisi turhaan odottamaan.
