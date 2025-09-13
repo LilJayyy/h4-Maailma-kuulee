@@ -39,7 +39,74 @@ https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-exa
 
 # a) Pilvipalvelimen vuokraus ja asennus
 
+Lähdin vuokraamaan pilvipalvelimen tunnilla 10.9.2025 kello 17:50 ohjeistuksen mukaan. 
+
+Raportin ja tehtävän tekeminen jatkui 13.09.2025 kello 13:30. Tehävänosiossa käytin neljän eri verkkosivun ohjetta. SelfPrivacy(2025), Karvinen (2017 ja 2025), sekä Upcloud.
+
+Palveluksi valikoitui:
+
+**Upcloud**
+
+* 1 CPU-ydin (CPU)
+  
+* 1 GB muistia (RAM)
+  
+* 10 GB levytilalla (storage)
+  
+* 3.00€ /kuukaudessa
+
+![up](images/up.png)
+_Konfiguraation tiedot_
+
+**Virhetilanne** tulikin, kun jostain syystä tuli herja "Permission denied". Vaikka kävin vaihtamassa SSH-keyn Accountin kautta Upcloudissa, herja toistui muutaan kerran.
+
+Aikaa kului tässä kohtaa sen verran, että päädyin vuokraamaan kokonaan uuden pilvipalvelimen. Tunnilta muistui kuitenkin hyvin miten se luotiin. Kävin vaihtamassa kuitenkin SSH-keyn etukäteen.
+
+1. Avasin virtuaalikoneen terminaalin
+
+2. **`sudo apt-get update`**
+
+3. **`ssh -i ~/.ssh/id_ed25519 root@185.26.51.22`** - Komennolla yhdistin äskettäin luotuun UpCloud palvelimeen.
+  
+![onni](images/onni.png)
+
+_Onnistunut yhteyden muodostus palvelimeen_
+
+Olen nyt saanut vuokrattua pilvipalvelimen ja yhdistettyä Linux-virtuaalikoneesta.
+
 # d) Palvelin suojaan palomuurilla
+
+Tässä tehtävänosiossa lähdin etenemään 14:23. Lähdin käyttämään tässä Karvisen (2017) ohjeistusta palomuurin käyttöönotosta aloittaen.
+
+Tunnilla näytettiin tämän osion eteneminen. Ymmärsin siitä, että hommat pitää asentaa niin sanotusti "alusta alkaen" joten aloitin seuraavasti:
+
+*  **`apt update`**  - Pakettien päivitystä
+*  **`apt install ufw`** - Komennolla UFW:n (Uncomplicated Firewall) asennus
+
+![pak](images/pak.png) 
+
+_Palomuurin asennus_
+
+* **`sudo ufw allow 22/tcp`** - Komennolla tehdään reikä SSH:lle ensin
+* **`sudo ufw allow 80/tcp`** - Komennolla Apachen serveriin
+
+* **`sudo ufw enable`** - Komennolla otetaan palomuuri käyttöön
+* **`exit`** Komennolla poistuminen ja yhteyden sulku
+
+* ![1](images/1.png)
+
+_Palomuurin käyttöönotto ja SSH:n salliminen_
+
+# Lisätään käyttäjä
+
+* **`sudo adduser lilja`** - Käyttäjän lisääminen
+* seuraavaksi lisäsin salasanan
+
+* **`sudo adduser lilja sudo`***
+
+
+
+
 
 # e) Kotisivut palvelimelle
 
@@ -54,3 +121,15 @@ https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-exa
 - Name Based Virtual Host avulla pääset muokkaamaan kotisivuja normaalilla käyttäjällä, ilman sudoa  
 
 ## Lähteet 
+
+Upcloud. Artikkeli. _Managing SSH keys_ Luettavissa: https://upcloud.com/docs/guides/managing-ssh-keys/ Luettu: 13.9.2025.
+
+Upcloud. Artikkeli. _Connecting to your Cloud Server_ Luettavssa: https://upcloud.com/docs/guides/connecting-to-your-server/ Luettu 13.09.2025
+
+SelfPrivacy. 2025. Artikkeli _How to get root access via SSH_ Luettavissa: https://selfprivacy.org/docs/how-to-guides/root_ssh/ Luettu 13.09.2025
+
+Karvinen, T. 2025. Verkkosivu. _Linux Palvelimet 2025_ Luettavissa: https://terokarvinen.com/linux-palvelimet/ Luettu 13.09.2025
+
+Karvinen, T. 2017. Verkkosivu. _First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_ https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/ Luettu 13.09.2025
+
+ 
