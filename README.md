@@ -77,7 +77,7 @@ Olen nyt saanut vuokrattua pilvipalvelimen ja yhdistettyä Linux-virtuaalikonees
 
 # d) Palvelin suojaan palomuurilla
 
-Tässä tehtävänosiossa lähdin etenemään 14:23. Lähdin käyttämään tässä Karvisen (2017) ohjeistusta palomuurin käyttöönotosta aloittaen.
+Tässä tehtävänosiossa lähdin etenemään 14:23. Käytin tässä Karvisen (2017) ohjeistusta palomuurin käyttöönotosta aloittaen.
 
 Tunnilla näytettiin tämän osion eteneminen. Ymmärsin siitä, että hommat pitää asentaa niin sanotusti "alusta alkaen" joten aloitin seuraavasti:
 
