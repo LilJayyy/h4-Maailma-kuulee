@@ -97,7 +97,7 @@ Palveluksi valikoitui:
 
 _Konfiguraation tiedot_
 
-### **Virhetilanne** tulikin, kun jostain syystä tuli herja "Permission denied". Vaikka kävin vaihtamassa SSH-keyn Accountin kautta Upcloudissa, herja toistui muutaan kerran.
+**Virhetilanne**  ilmeni, kun jostain syystä tuli herja 'Permission denied'. Vaikka kävin vaihtamassa SSH-avaimen Accountin kautta UpCloudissa, herja toistui vielä kerran.
 
 Aikaa kului tässä kohtaa sen verran, että päädyin vuokraamaan kokonaan uuden pilvipalvelimen. Tunnilta muistui kuitenkin hyvin miten se luotiin. Kävin vaihtamassa kuitenkin SSH-keyn etukäteen.
 
