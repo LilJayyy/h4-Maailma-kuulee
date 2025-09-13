@@ -49,23 +49,19 @@
 **`sudo apt-get dist-upgrade`**
 
 ## Tero Karvisen ( artikkelista _First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_ tiivistelmä alla. 
-
-Tässä päästään luomaan virtuaalipalvelin, palomuurin käyttöönotto, luodaan käyttäjä, suljetaan root, päivitetään paketit ja otetaan verkkopalvelin käyttöön. Ohjeistuksessa on käytetty DigitalOceania. Sivulla mainitaan myös kilpailijoista kuten Linode ja Gandi, mutta esimerkissä valitut on valittu siksi, että ne sisältyvät  GitHub Educationin pakettiin.
+Lähdettiin luomaan virtuaalipalvelin, palomuurin käyttöönotto, luodaan käyttäjä, suljetaan root, päivitetään paketit ja otetaan verkkopalvelin käyttöön. Ohjeistuksessa on käytetty DigitalOceania. Sivulla mainitaan myös kilpailijoista kuten Linode ja Gandi, mutta esimerkissä valitut on valittu siksi, että ne sisältyvät  GitHub Educationin pakettiin.
 
 ### **Luodaan virtuaalipalvelin Digital Oceanilla**
 - Luodaan käyttäjätili, syötetään maksukortin tiedot ja valitaan lähin data center (Eurooppa) asiakkaaksi.
 - Luodaan kirjautumistapa SSH-avain tai salasana
-- Kirjaudutaan sisään rootilla (ainut kerta kun sillä kirjaudutaan) 
 
 ### **Palomuuri** 
 - UFW:n (Uncomplicated Firewall) asennus
 -  **`sudo ufw allow 22/tcp`** - Komennolla tehdään reikä SSH:lle ensin
--  **`sudo ufw allow 80/tcp`** - Komennolla Apachen serveriin
 
 ### **Lisätään käyttäjä ja tehdään pääkäyttäjäksi**
 - **`sudo adduser tero sudo`**
 - **`sudo adduser tero adm`**
-- **`ssh tero@tero.example.com`**
   
 - Kokeile ensin: avaa uusi paikallinen terminaali ja testaa käyttäjäsi ennen kuin suljet istunnon
 
@@ -74,11 +70,6 @@ Tässä päästään luomaan virtuaalipalvelin, palomuurin käyttöönotto, luod
 - **`sudo usermod --lock root`**
 - **`Disable root login on SSH`**
 
--  **` sudoedit /etc/ssh/sshd_config`**
-   -  # ...
--  - PermitRootLogin no
-   -  # ...
-- **`sudo service ssh restart`**
 
 ### **Virtuaalipalvelimen ohjelmien päivitys turvallisuuden ylläpitämiseksi**
 - Tietoturvan takaamiseksi päivitetään uudet ohjelmat
@@ -90,7 +81,7 @@ Kun asennat julkisen palvelimen (Apache esimerkiksi) muista avata reikä palomuu
 1. **`sudo ufw allow 80/tcp`**
 
 ### Domain nimin yhdistäminen palvelimeen
-Viimeisessä kohdassa päästän myös tekemään Domain nimi eli julkinen DNS nimi NameCheapin kautta, joka vie suoraan luodulle verkkosivulle IP-osoitteen syöttämisen sijaan.  Ohjeistuksessa annettiin GitHub Educationin pakettiin liittyen vinkki, jolla saa NameCheapilta ilmaisen me-nimipalvelimen. 
+Viimeisessä kohdassa päästän myös tekemään Domain nimi eli julkinen DNS nimi NameCheapin kautta, joka vie suoraan luodulle verkkosivulle IP-osoitteen syöttämisen sijaan.  
 - Samalla on mainittu Gandista, joka on toinen hyvä vaihtoehto nimipalvelimen vuokraamiseen. 
 - Ohjeistetaan lisäämään uusi tiedosto ("A record" "@"). Testausta kehotettu vain Firefoxilla, ettei väärä nimi ole välimuistissa ja joutuisi turhaan odottamaan.
 - Nimen testaamista susitellaan tekemään host example.com dns1.registrar-servers.com -komennolla. 
