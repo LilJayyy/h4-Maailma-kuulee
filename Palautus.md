@@ -48,8 +48,10 @@
 **`sudo apt-get upgrade`**
 **`sudo apt-get dist-upgrade`**
 
+
 ## Tero Karvisen (2017) _First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_ artikkeli
-Virtuaalipalvelin luotiin DigitalOceanissa, palomuuri otettiin käyttöön, luotiin käyttäjä ja suljettiin root, päivitettiin paketit ja verkkopalvelin otettiin käyttöön.
+
+- Virtuaalipalvelin luotiin DigitalOceanissa, palomuuri otettiin käyttöön, luotiin käyttäjä ja suljettiin root, päivitettiin paketit ja verkkopalvelin otettiin käyttöön.
 
 ### **Luodaan virtuaalipalvelin Digital Oceanilla**
 - Luodaan käyttäjätili, syötetään maksukortin tiedot ja valitaan lähin data center (Eurooppa) asiakkaaksi.
@@ -69,7 +71,6 @@ Virtuaalipalvelin luotiin DigitalOceanissa, palomuuri otettiin käyttöön, luot
 - Lukitaan root käyttäjä. Huomiona se, että `usermod -lock` vain lukitsee salasanan eikä jokaista tapaa käyttää
 - **`sudo usermod --lock root`**
 - **`Disable root login on SSH`**
-
 
 ### **Virtuaalipalvelimen ohjelmien päivitys turvallisuuden ylläpitämiseksi**
 - Tietoturvan takaamiseksi päivitetään uudet ohjelmat
