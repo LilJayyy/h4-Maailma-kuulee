@@ -41,7 +41,7 @@ https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-exa
 
 Lähdin vuokraamaan pilvipalvelimen tunnilla 10.9.2025 kello 17:50 ohjeistuksen mukaan. 
 
-Raportin ja tehtävän tekeminen jatkui 13.09.2025 kello 13:30. Tehävänosiossa käytin neljän eri verkkosivun ohjetta. SelfPrivacy(2025), Karvinen (2017 ja 2025), sekä Upcloud.
+Raportin ja tehtävän tekeminen jatkui 13.09.2025 kello 13:30. Tehtäväosiossa käytin neljän eri verkkosivun ohjetta. SelfPrivacy(2025) , Karvinen (2017 ja 2025), sekä Upcloud.
 
 Palveluksi valikoitui:
 
