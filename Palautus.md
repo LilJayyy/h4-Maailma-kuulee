@@ -318,7 +318,8 @@ Pääsin harjoittelemaan muutamaan otteeseen, ja millä muulla tavalla asioita o
 
 Serverin aion luoda vielä uudelleen, kun siirryn DigitalOceanin puolelle. Onneksi NameCheapissa voi vain yhdistää uuden IP-osoitteen domain-nimeen, joten se onnistuu suhteellisen helposti.
 
-## Lähteet 
+# Lähteet 
+
 Archlinux. Verkkosivu. _systemd/Journal_ Luettavissa: https://wiki.archlinux.org/title/Systemd/Journal Luettu 13.09.2025.
 
 GitHub Education. Verkkosivu. Luettavissa: https://education.github.com/learner/learn Luettu 13.09.2025.
