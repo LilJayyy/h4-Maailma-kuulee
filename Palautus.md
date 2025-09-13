@@ -310,6 +310,8 @@ _DNS Nimi vastaa_
 _Nimen testausta ja oikea IP-osoite vastaa_
 
 
+#### Lopputulos 
+
 Tässä vaiheessa kello olikin jo 21.18. Tässä raportin teossa voisi todeta että kertaus on opintojen äiti. Pääsin ainakin harjoittelemaan muutamaan otteeseen, mutta millä muullakaan tavalla asioita oppii kuin kertaamalla.
 
 Serverin aion luoda vielä uudelleen kun siirryn DigitalOceanin puolelle. Onneksi NameCheapissa voi vain yhdistää uuden IP-osoitteen domainnimeen, joten siinä tulee pääsemään jokseenkin helpolla.
