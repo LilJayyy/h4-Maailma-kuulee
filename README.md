@@ -99,7 +99,7 @@ _Palomuurin käyttöönotto ja SSH:n salliminen_
 # Lisätään käyttäjä
 
 * **`sudo adduser lilja`** - Käyttäjän lisääminen
-* seuraavaksi lisäsin salasanan
+  - asetin salasanan
 
 * **`sudo adduser lilja sudo`***
 
