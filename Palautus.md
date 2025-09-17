@@ -9,7 +9,7 @@
 
 [c) Weppipalvelin](#c-Weppipalvelin)
 
-[h) Vapaaehtoinen: Name Based Virtual Host](#h-name-based-virtual-host)
+[d) Name Based Virtual Host](#d-Name-based-virtual-host)
 
 
 ### Koneen tekniset tiedot
@@ -252,7 +252,7 @@ Syötin komennot
 Nyt on päivitetty palvelimen ohjelmat ja tietoturvapäivitykset.
 
 
-# h) Vapaaehtoinen: Name Based Virtual Host
+# d) Name Based Virtual Host
 
 Tässä kohtaa kello oli jo 19:30, koska käytin väärää avainta. Tämän seurauksena jouduin luomaan kokonaan uuden palvelimen uudella SSH-avaimella ja käyttäjällä lilja2.
 
