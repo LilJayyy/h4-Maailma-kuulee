@@ -5,15 +5,11 @@
 
 [a) Pilvipalvelimen vuokraus ja asennus](#a-pilvipalvelimen-vuokraus-ja-asennus)
 
-[d) Palvelin suojaan palomuurilla](#d-palvelin-suojaan-palomuurilla)
+[b) Alkutoimet](#b-Alkutoimet)
 
-[e) Kotisivut palvelimelle](#e-kotisivut-palvelimelle)
+[c) Weppipalvelin](#c-Weppipalvelin)
 
-[f) Palvelimen ohjelmien päivitys](#f-palvelimen-ohjelmien-päivitys)
-
-[g) Vapaaehtoinen: weppipalvelimen asennus virtuaalipalvelimelle](#g-vapaaehtoinen-weppipalvelimen-asennus-virtuaalipalvelimelle)
-
-[h) Vapaaehtoinen: Name Based Virtual Host](#h-vapaaehtoinen-laita-omalle-julkiselle-palvelimellesi-uusi-name-based-virtual-host)
+[h) Vapaaehtoinen: Name Based Virtual Host](#h-name-based-virtual-host)
 
 
 ### Koneen tekniset tiedot
@@ -126,7 +122,7 @@ _Onnistunut yhteyden muodostus palvelimeen_
 
 Olen nyt saanut vuokrattua pilvipalvelimen ja yhdistettyä Linux-virtuaalikoneesta.
 
-# d) Palvelin suojaan palomuurilla
+# b) Alkutoimet
 
 Tässä tehtävänosiossa lähdin etenemään 14:23. Käytin tässä Karvisen (2017) ohjeistusta palomuurin käyttöönotosta aloittaen.
 
@@ -147,7 +143,7 @@ _Palomuurin asennus_
 
 _Palomuurin käyttöönotto_
 
-# e) Kotisivut palvelimelle
+# c) Weppipalvelin
 
 Lähdin tähän tehtävänosioon 16:12 tauon jälkeen. Sain tässä kohtaa viestin Github Educationilta, että hakemus hyväksytiin.
 
@@ -220,13 +216,6 @@ Alla työjärjestys, jolla etenin.
 
 _Yllä oleva prosessi kuvassa_
 
-
-# g) Vapaaehtoinen: weppipalvelimen asennus virtuaalipalvelimelle
-
-Tässä kohdin oli hyvä ymmärtää mitä tunnilla havaitsin seuratessa. En ollut koskaan aiemmin tehnyt tätä, mutta ajatuksena helpotti miettiä, että alustan ja asennan kaiken niin sanotusti uudelleen tälle juuri luomalleni pilvipalvelimelle. 
-
-Tässä hyödynsin myös h3 tehtävää, sekä Karvisen (2018) ohjetta, josta pääsin katsomaan etenemisaskeleita. Ikävä kyllä ihan ulkomuistista komennot eivät vielä tulleet.
-
 ### Apachen asentamista
 
 * **`sudo apt update`**
@@ -252,7 +241,7 @@ _Apachen oletussivu avautui_
 
  ![8](images/8.png)
 
-# f) Palvelimen ohjelmien päivitys
+### Palvelimen ohjelmien päivitys
 
 Syötin komennot
 
@@ -263,7 +252,7 @@ Syötin komennot
 Nyt on päivitetty palvelimen ohjelmat ja tietoturvapäivitykset.
 
 
-# h) Vapaaehtoinen: Laita omalle julkiselle palvelimellesi uusi Name Based Virtual Host
+# h) Vapaaehtoinen: Name Based Virtual Host
 
 Tässä kohtaa kello oli jo 19:30, koska käytin väärää avainta. Tämän seurauksena jouduin luomaan kokonaan uuden palvelimen uudella SSH-avaimella ja käyttäjällä lilja2.
 
