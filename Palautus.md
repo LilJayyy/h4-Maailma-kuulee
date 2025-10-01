@@ -271,6 +271,13 @@ Kannattaa siis tarkasti etsiä listalta löytyykö jo kyseinen kohta ja vaihtaa 
 
 _Domain list_
 
+### Oletussivun poistaminen
+
+Etenin seuraavasti syöttämällä komennot oletussivun poistamiseksi:
+
+* **`sudo a2dissite 000-default.conf`**
+* **`sudo systemctl reload apache2`**
+
 Tarkistin sivun ja lähti toimimaan uudella IP-osoitteella hienosti.
 
  ![16](images/16.png)
