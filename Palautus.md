@@ -227,12 +227,21 @@ _Yllä oleva prosessi kuvassa_
   
   _sudo systemctl status apache2 komennon tulos_
 
-  Kaikki siis pyörii normaalisti. Syötin ip-osoitteen fyysisen koneen internet-selaimeen. Sieltähän se tuli, eli Apachen oletussivu.
+Kaikki siis pyörii normaalisti. Syötin ip-osoitteen fyysisen koneen internet-selaimeen. Sieltähän se tuli, eli Apachen oletussivu.
 
 
   ![7](images/7.png)
 
 _Apachen oletussivu avautui_
+
+### Oletussivun poistaminen
+
+Etenin seuraavasti syöttämällä komennot oletussivun poistamiseksi:
+
+* **`sudo a2dissite 000-default.conf`**
+* **`sudo systemctl reload apache2`**
+
+Tarkistin sivun ja lähti toimimaan uudella IP-osoitteella hienosti.
 
 * Meinasi tulla virhetilanne, kun jouduin hieman miettimää millä koneella avaan kyseisen IP-osoitteen. Asiahan oli selvä, kun tuli ymmärrettyä että fyysiselle koneelle se syötetään internet-selaimelle, kun palvelin on sieltä avattu.
 
@@ -270,15 +279,6 @@ Kannattaa siis tarkasti etsiä listalta löytyykö jo kyseinen kohta ja vaihtaa 
  ![9](images/9.png)
 
 _Domain list_
-
-### Oletussivun poistaminen
-
-Etenin seuraavasti syöttämällä komennot oletussivun poistamiseksi:
-
-* **`sudo a2dissite 000-default.conf`**
-* **`sudo systemctl reload apache2`**
-
-Tarkistin sivun ja lähti toimimaan uudella IP-osoitteella hienosti.
 
  ![16](images/16.png)
  
